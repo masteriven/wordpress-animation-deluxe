@@ -1,0 +1,101 @@
+#wpfooter{
+    display: none;
+}
+.anime_con{
+    padding: 10px;
+    position: relative;
+}
+
+.play_btn{
+    position: absolute;
+    top: -1px;
+    cursor: pointer;
+}
+.anime_con .anime_sub_con .anime_examp{
+    width: 500px;
+}
+
+.anime_con .anime_sub_con_header{
+  display: flex;
+  gap:20px;
+}
+
+.anime_con .anime_sub_con .anime_no_event span,
+.anime_con .anime_sub_con .anime_click_option span,
+.anime_con .anime_sub_con .anime_hover_option span{
+   font-size:14px;
+   font-weight: bold;
+   color: blue;
+   cursor: pointer;
+}
+
+.anime_con .anime_sub_con .anime_examp .object_squ{
+    background-color: red;
+    height: 20px;
+    width: 20px;
+}
+
+.hidden_animation_settings .animation_no_event_settings , 
+.hidden_animation_settings .animation_click_event_settings, 
+.hidden_animation_settings .animation_hover_event_settings{
+  width: 98%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: white;
+  display: none;
+}
+
+.animation_no_event_settings h2 ,
+.animation_click_event_settings h2 ,
+.animation_hover_event_settings h2{
+    text-align: center;
+}
+
+.classes_con{
+    display: flex;
+    gap: 17px;
+    margin-top: 11px;
+    align-items: center;
+}
+
+.classes_con .select_class{
+    width: 200px;
+}
+
+.options_con{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 98%;
+    margin-top: 10px;
+}
+
+.hidden_animation_settings .animation_no_event_settings h2 , 
+.hidden_animation_settings .animation_click_event_settings h2, 
+.hidden_animation_settings .animation_hover_event_settings h2{
+ margin-top: 2px;
+ border-bottom: 1px solid black;
+ width: 180px;
+ margin: 0 auto;
+}
+
+.hidden_animation_settings .element_animation_container{
+   margin-top: 25px;
+   margin-bottom: 15px;
+}
+
+
+.hidden_animation_settings .element_animation_container .add_new_element{
+    font-size:27px;
+    font-weight:bold;
+    border: 4px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    padding:0px 8px 0px 8px;
+
+}
+
+.selector_type{
+    margin-left: 10px;
+    margin-right: 10px;
+}
