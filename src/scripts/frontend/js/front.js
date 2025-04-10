@@ -1,5 +1,6 @@
 jQuery(function($){
 localStorage.removeItem('objAnimClick');
+localStorage.removeItem('objAnimHover');
     function initAnimation(selectorType,selector){
         if(selector.animationType == 'Object Move Point X To Y'){
             anime({
@@ -269,17 +270,15 @@ if(selector.animationProperties[1].optionValue == 'on'){
             }
         });
     }
-
     $('*').on('click',function(){
         if($(this).attr('data-anim-deluxe') == 'true' && $(this).attr('data-anim-deluxe-eventtype') == 'click_event') {
-            if($(this).attr('data-anim-deluxe-selector') == 'class'){
-                clickElementAnimation($(this).attr('class'));
-            }else{
-                clickElementAnimation($(this).attr('id'));
-            }
-            
-        }
-        return false;
+          if($(this).attr('data-anim-deluxe-selector') == 'class'){
+              clickElementAnimation($(this).attr('class'));
+          }else{
+              clickElementAnimation($(this).attr('id'));
+          }
+          
+      }
     });
 
     //hover event
@@ -328,9 +327,7 @@ if(selector.animationProperties[1].optionValue == 'on'){
                 hoverElementAnimation($(this).attr('class'));
             }else{
                 hoverElementAnimation($(this).attr('id'));
-            }
-            
-        }
-        return false;
+            }      
+        }        
     });
 });
